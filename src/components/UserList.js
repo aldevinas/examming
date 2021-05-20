@@ -68,16 +68,14 @@ function UserList() {
                                 <p className="rowAlign">{item.name}</p>
                             </div>
                             <div className="rowAlign">
-
                                 <p>{item.age}</p>
-
-                                <h3 className='btnDel' onClick={() => deleteItem(item._id)}>Panaikinti</h3>
                             </div>
                             <div className="rowAlign">
                                 <p>el.paštas: {item.email}</p>
                             </div>
                             <div className="rowAlign">
                                 <p>{item.password}</p>
+                              <h3 className='btnDel' onClick={() => deleteItem(item._id)}>Ištrinti</h3>
                             </div>
                         </div>
                     ))}
