@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema;
-
+// vartotojo schema
 const usersSchema = new Schema({
     name: {
         type: String,

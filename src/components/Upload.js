@@ -9,7 +9,8 @@ function Upload() {
     const passwordRef = useRef()
     const [getError, setError] = useState(" ")
 
-// upload user toDB
+//  vartotojo upload toDB
+
     function upload() {
 
         const data = {
@@ -41,7 +42,7 @@ function Upload() {
             })
     }
 
-    //user inputs interface formation
+    //vartotojo inputs
     return (
         <div className="wrapper">
             <div>
