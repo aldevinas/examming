@@ -10,7 +10,7 @@ Vartotojo aplinka - React app.
 
 ## Available Scripts
 
-Projekto vartotojo pusė paleidžiama iš projekto viduje esancio app.js failo naudojamt komandą:
+Projekto vartotojo pusė paleidžiama iš projekto viduje esancio app.js failo naudojat komandą:
 
 ### `npm start`
 
