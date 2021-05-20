@@ -1,5 +1,10 @@
+body {
+  background-color: #e3e3e3;
+}
+
+
 .nav {
-  background-color: #2f2f2f;
+  background-color: #2189ba;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +24,8 @@
   margin: 0 20px 0 20px;
   cursor: pointer;
 }
-.btn:hover {
-  background-color: #D6A60B;
+.btnY:hover {
+  background-color: #ffc400;
 }
 .wrapper{
   display: flex;
@@ -68,7 +73,7 @@ h3{
 }
 .table {
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr 2fr;
+  grid-template-columns: 2fr 1fr 3fr 2fr;
   grid-template-rows: 1fr;
   border-bottom: 1px solid #ffffff;
 }

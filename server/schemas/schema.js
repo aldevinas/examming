@@ -21,6 +21,6 @@ const usersSchema = new Schema({
     },
 })
 
-const userSchema = mongoose.model("Users", usersSchema)
+const userSchema = mongoose.model("UserList", usersSchema)
 
-module.exports = userSchema
+module.exports = {userSchema}

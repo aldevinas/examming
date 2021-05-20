@@ -13,9 +13,11 @@ mongoose.connect(process.env.MONGO_KEY, {
   useUnifiedTopology: true,
   useFindAndModify: false })
 
+
+
   .then(info => {
     console.log('connected successfully to DB')
-    console.log(info)
+    // console.log(info)
   }).catch(e => {
     console.log('error while connecting to DB')
   console.log(e)

@@ -4,16 +4,19 @@ import {useRef} from "react";
 function Upload() {
 
     const nameRef = useRef()
-    const quantityRef = useRef()
-    const priceRef = useRef()
+    const ageRef = useRef()
+    const emailRef = useRef()
+    const passwordRef = useRef()
     const [getError, setError] = useState(" ")
 
-
+// upload user
     function upload() {
+
         const data = {
             name: nameRef.current.value,
-            quantity: quantityRef.current.value,
-            price: priceRef.current.value
+            age: ageRef.current.value,
+            email: emailRef.current.value,
+            password:passwordRef.current.value
         }
         fetch('http://localhost:3001/upload', {
             method: 'POST',
@@ -29,8 +32,9 @@ function Upload() {
                 }
                 if (!data.error) {
                     nameRef.current.value = ''
-                    quantityRef.current.value = ''
-                    priceRef.current.value = ''
+                    ageRef.current.value = ''
+                    emailRef.current.value = ''
+                    passwordRef.current.value = ''
 
                     return setError(data.message)
                 }
@@ -51,18 +55,18 @@ function Upload() {
 
                     <input type="number"
                            className='input'
-                           ref={quantityRef}
+                           ref={ageRef}
                            placeholder='Amžius'/>
 
-                    <input type="number"
+                    <input type="text"
                            className='input'
-                           ref={priceRef}
+                           ref={emailRef}
                            placeholder='El. paštas'/>
 
-                    {/*<input type="number"*/}
-                    {/*       className='input'*/}
-                    {/*       ref={priceRef}*/}
-                    {/*       placeholder='Slaptažodis'/>*/}
+                    <input type="text"
+                           className='input'
+                           ref={passwordRef}
+                           placeholder='Slaptažodis'/>
 
                 </div>
                 <div onClick={upload} className='btnY'>Įrašyti</div>

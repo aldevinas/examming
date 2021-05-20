@@ -1,4 +1,4 @@
-const itemDb = require('../schemas/schema');
+const itemDB = require('../schemas/schema');
 
 
 
@@ -6,42 +6,26 @@ module.exports = {
 
     validator: async (req, res, next) => {
 
-        const {name, quantity, price} = req.body
+        const {name, age, email, password} = req.body
 
         function send(error, message) {
             res.send({error: error, message: message})
         }
-        if (quantity.length === 0) {
-            return send(true, 'Please, add title name in field')
+        if (name.length === 0 ) {
+            return send(true, 'Prašome įvesti vartotojo vardą')
         }
-        if (name.length < 3 ) {
-            return send(true, 'Title name must heave more then 3 symbols')
+        if (age.length === 0) {
+            return send(true, 'Prašome įvesti vartotojo amžių')
         }
-        if (name.length > 50) {
-            return send(true, 'Title name must heave less then 3 symbols')
+        if (email.length === 0) {
+            return send(true, 'Prašome įvesti vartotojo el. paštą')
         }
-        if (price.length === 0) {
-            return send(true, 'Please, add price in field')
-        }
-        if ((!/[^1-9]/.test(name))) {
-            return send(true, 'Title must have letters!')
-        }
-        if ((!/[^a-zA-Z]/.test(quantity))) {
-            return send(true, 'Quantity must heave number value')
-        }
-        if ((!/[^a-zA-Z]/.test(price))) {
-            return send(true, 'Price must heave number value')
+        if (password.length === 0) {
+            return send(true, 'Prašome įvesti vartotojo slaptažodį')
         }
         next()
 
     },
 
-    checkQuantity: async (req, res, next) => {
-        let item = await itemDb.itemsSchema.find({_id: req.params.id})
 
-        if (item[0].quantity === 0) {
-            return res.send({error: true, message: 'There is no UserList'})
-        }
-        next()
-    }
 }

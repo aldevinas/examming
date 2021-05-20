@@ -3,9 +3,9 @@ import {useEffect, useState} from "react";
 import './components.css'
 
 function UserList() {
-    const [trigger, setTrigger] = useState(false)
-    const [getItems, setItems] = useState(null)
-    const [getNewRow, setNewRow] = useState({gridTemplateRows: 0})
+  const [trigger, setTrigger] = useState(false)
+  const [getItems, setItems] = useState(null)
+  const [getNewRow, setNewRow] = useState({gridTemplateRows: 0})
 
 
 
@@ -48,18 +48,17 @@ function UserList() {
                         </div>
 
                         <div className="rowAlign">
-                            <h3>Units</h3>
+                            <h3>Amžius</h3>
                         </div>
 
                         <div className="rowAlign">
-                            <h3>Price</h3>
+                            <h3>El. paštas</h3>
                         </div>
 
                         <div className="rowAlign">
-                            <h3>Total Amount</h3>
+                            <h3>Slaptažodis</h3>
                         </div>
                     </div>
-
 
 
 
@@ -69,18 +68,16 @@ function UserList() {
                                 <p className="rowAlign">{item.name}</p>
                             </div>
                             <div className="rowAlign">
-                                <h3 className=' btnPlus' onClick={() => removeItem(item._id)} >-</h3>
 
-                                <p>{item.quantity}</p>
-                                <h3 className=' btnPlus' onClick={() => addItem(item._id)}>+</h3>
+                                <p>{item.age}</p>
 
                                 <h3 className='btnDel' onClick={() => deleteItem(item._id)}>Del</h3>
                             </div>
                             <div className="rowAlign">
-                                <p>{item.price} Eur</p>
+                                <p>el.paštas: {item.email}</p>
                             </div>
                             <div className="rowAlign">
-                                <p>{item.price * item.quantity} Eur</p>
+                                <p>{item.password}</p>
                             </div>
                         </div>
                     ))}

@@ -1,8 +1,10 @@
-import './App.css';
+
 import Nav from "./components/Nav";
 import Upload from "./components/Upload";
 import UserList from "./components/UserList";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+
 
 function App() {
   return (
