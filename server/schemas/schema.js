@@ -7,16 +7,12 @@ const itemSchema = new Schema({
         type: String,
         required: true
     },
-    age: {
+    quantity: {
         type: Number,
         required: true
     },
-    email: {
-        type: String,
-        required: true
-    },
-    password: {
-        type: String,
+    price: {
+        type: Number,
         required: true
     },
 })

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useRef} from "react";
 
-function Upload(props) {
+function Upload() {
 
     const nameRef = useRef()
     const quantityRef = useRef()
@@ -47,20 +47,25 @@ function Upload(props) {
                     <input type="text"
                            className='input'
                            ref={nameRef}
-                           placeholder='New Inventory name'/>
+                           placeholder='Naujo vartotojo vardas'/>
 
                     <input type="number"
                            className='input'
                            ref={quantityRef}
-                           placeholder='Quantity'/>
+                           placeholder='Amžius'/>
 
                     <input type="number"
                            className='input'
                            ref={priceRef}
-                           placeholder='Price'/>
+                           placeholder='El. paštas'/>
+
+                    {/*<input type="number"*/}
+                    {/*       className='input'*/}
+                    {/*       ref={priceRef}*/}
+                    {/*       placeholder='Slaptažodis'/>*/}
 
                 </div>
-                <div onClick={upload} className='btnY'>Upload</div>
+                <div onClick={upload} className='btnY'>Įrašyti</div>
             </div>
         </div>
     );

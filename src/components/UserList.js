@@ -2,7 +2,7 @@ import React from 'react';
 import {useEffect, useState} from "react";
 import './components.css'
 
-function Inventory() {
+function UserList() {
     const [trigger, setTrigger] = useState(false)
     const [getItems, setItems] = useState(null)
     const [getNewRow, setNewRow] = useState({gridTemplateRows: 0})
@@ -44,7 +44,7 @@ function Inventory() {
                 <div style={getNewRow} className='frame'>
                     <div className="table">
                         <div className="rowAlign">
-                            <h3>Inventory name</h3>
+                            <h3>Vartotojo vardas</h3>
                         </div>
 
                         <div className="rowAlign">
@@ -89,4 +89,4 @@ function Inventory() {
     );
 }
 
-export default Inventory;
+export default UserList;

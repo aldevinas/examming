@@ -9,7 +9,7 @@ module.exports = {
         newItem.quantity = req.body.quantity
         newItem.price = req.body.price
         newItem.save().then(() => {
-            res.send({error: false, message: 'Inventory successfully added'})
+            res.send({error: false, message: 'Vartotojas sekmingai įvestas'})
         }).catch(e => {
             res.send({error: true, message: e})
             console.log(e)
@@ -39,6 +39,6 @@ module.exports = {
     delete: async (req, res) => {
         await itemDb.itemsSchema.findOneAndDelete({_id: req.params.id})
         await itemDb.itemsSchema.findOneAndDelete({recipeId: req.params.id})
-        res.send({error: false, message: "Inventory item deleted"})
+        res.send({error: false, message: "UserList item deleted"})
     },
 }

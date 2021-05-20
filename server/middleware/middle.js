@@ -40,7 +40,7 @@ module.exports = {
         let item = await itemDb.itemsSchema.find({_id: req.params.id})
 
         if (item[0].quantity === 0) {
-            return res.send({error: true, message: 'There is no Inventory'})
+            return res.send({error: true, message: 'There is no UserList'})
         }
         next()
     }
