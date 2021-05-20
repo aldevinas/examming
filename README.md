@@ -1,7 +1,13 @@
 # Getting Started with Create React App
 
-Projektas skirtas egzaminavimo užduožiai atlikti. Projektas atliktas naudojant REACT terpę. [Create React App](https://github.com/facebook/create-react-app).
-Naudojama MERN sistema. Veiksmai - CRUD
+Projektas skirtas egzaminavimo užduožiai atlikti. Inscenizuojama vartotojų kartotekos programa.
+Projektas atliktas sukuriant REACT aplikacijos terpę. [Create React App](https://github.com/facebook/create-react-app).
+
+Naudojama MERN sistema. Veiksmai  - CRUD
+Duomenų bazė - MongoDB
+Serverio komunikacija - Express, NodeJS.
+Vartotojo aplinka - React app.
+
 ## Available Scripts
 
 Projekto vartotojo pusė paleidžiama iš projekto viduje esancio app.js failo naudojamt komandą:
