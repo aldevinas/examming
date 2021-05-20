@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Egzamino užduoties aprašymas ir dokumentacija
 
 Projektas skirtas egzaminavimo užduožiai atlikti. Inscenizuojama vartotojų kartotekos programa.
 Projektas atliktas sukuriant REACT aplikacijos terpę. [Create React App](https://github.com/facebook/create-react-app).
@@ -8,7 +8,7 @@ Duomenų bazė - MongoDB
 Serverio komunikacija - Express, NodeJS.
 Vartotojo aplinka - React app.
 
-## Available Scripts
+## Naudojamos komandos
 
 Projekto vartotojo pusė paleidžiama iš projekto viduje esancio app.js failo naudojat komandą:
 
