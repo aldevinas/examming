@@ -12,17 +12,21 @@ module.exports = {
             res.send({error: error, message: message})
         }
         if (name.length === 0 ) {
-            return send(true, 'Prašome įvesti vartotojo vardą')
+            return send(true, '! Prašome įvesti vartotojo vardą')
         }
         if (age.length === 0) {
-            return send(true, 'Prašome įvesti vartotojo amžių')
+            return send(true, '! Prašome įvesti vartotojo amžių')
         }
         if (email.length === 0) {
-            return send(true, 'Prašome įvesti vartotojo el. paštą')
+            return send(true, '! Prašome įvesti vartotojo el. paštą')
+        }
+        if (!email.includes('@')) {
+            return send(true, '! Prašome įvesti teisingą el. paštą')
         }
         if (password.length === 0) {
-            return send(true, 'Prašome įvesti vartotojo slaptažodį')
+            return send(true, '! Prašome įvesti vartotojo slaptažodį')
         }
+
         next()
 
     },
