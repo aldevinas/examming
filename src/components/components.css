@@ -77,21 +77,12 @@ h3{
   grid-template-rows: 1fr;
   border-bottom: 1px solid #ffffff;
 }
-.btnPlus {
-  text-decoration: none;
-  background-color: #FFD64A;
-  padding: 5px;
-  font-size: 16px;
-  color: #ffffff;
-  text-align: center;
-  cursor: pointer;
-  margin: 10px;
-}
+
 .btnDel {
   text-decoration: none;
-  background-color: #000000;
+  background-color: #8d0101;
   padding: 3px;
-  font-size: 16px;
+  font-size: 12px;
   color: #ffffff;
   text-align: center;
   margin: 10px;

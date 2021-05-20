@@ -71,7 +71,7 @@ function UserList() {
 
                                 <p>{item.age}</p>
 
-                                <h3 className='btnDel' onClick={() => deleteItem(item._id)}>Del</h3>
+                                <h3 className='btnDel' onClick={() => deleteItem(item._id)}>Panaikinti</h3>
                             </div>
                             <div className="rowAlign">
                                 <p>el.paštas: {item.email}</p>
