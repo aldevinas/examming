@@ -2,7 +2,6 @@ body {
   background-color: #e3e3e3;
 }
 
-
 .nav {
   background-color: #2189ba;
   display: flex;
@@ -17,7 +16,7 @@ body {
 }
 .btnY {
   text-decoration: none;
-  background-color: #FFD64A;
+  background-color: #faa82f;
   padding: 10px;
   font-size: 16px;
   color: #ffffff;
@@ -67,7 +66,7 @@ h3{
   outline: none;
   padding: 5px;
   margin: 5px;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   border-bottom: 3px solid white;
 }
@@ -87,6 +86,9 @@ h3{
   text-align: center;
   margin: 10px;
   cursor: pointer;
+}
+.btnDel:hover{
+  background-color: #ff0000;
 }
 .textAlign{
   text-align: right;

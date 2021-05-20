@@ -61,7 +61,6 @@ function UserList() {
                     </div>
 
 
-
                     {getItems.map((item, index) => (
                         <div className="table" key={index}>
                             <div>
